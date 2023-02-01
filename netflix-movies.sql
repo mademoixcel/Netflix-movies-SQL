@@ -242,3 +242,8 @@ FROM raw_titles
 WHERE genres LIKE '%comedy%'
 ORDER BY imdb_score DESC
 LIMIT 10;
+
+--32 What are the ranks of best_show_by_year based on their genre--
+SELECT DENSE_RANK() OVER(PARTITION BY main_genre ORDER BY imdb_score DESC) AS rank_n,
+title, release_year, imdb_score, main_genre
+FROM best_show_by_year;
