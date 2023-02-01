@@ -1,6 +1,6 @@
 # Netflix-movies
 This Netflix Movies SQL Queries Repository is a collection of SQL scripts that can be used to analyze and manipulate data from a Netflix movie database.
-The repository contains a variety of SQL queries that can be used to extract and analyze data such as the most popular movies on Netflix, the ranks of movies and shows based on their genre, the average runtime of movies in different genres, movies suitable for different age groups and other related questions that can be used to gather insights. These scripts are written in SQL, which is a widely-used programming language for managing and querying databases, and the DBMS used is PostgreSQL.
+The repository contains a variety of SQL queries that can be used to extract and analyze data such as the ranks of best shows and movies by year based on their genres, the role each character played, the average runtime of movies in different genres, movies suitable for different age groups and other related questions that can be used to gather insights. These scripts are written in SQL, which is a widely-used programming language for managing and querying databases, and the DBMS used is PostgreSQL.
 
 # Installation of PostgreSQL 
 PostgreSQL is an open-source relational database management system that is widely used for data storage and analysis.
