@@ -33,18 +33,19 @@ The installation process for PostgreSQL consists of the following steps:
 4 Configure the necessary settings for the database.
 
 5 Verify that PostgreSQL is running correctly by accessing the database using pgAdmin or a terminal.
-Verification
 
-6 To verify that PostgreSQL has been installed correctly, you can do the following:
+**Verification**
 
-Open pgAdmin and connect to the newly created database.
+To verify that PostgreSQL has been installed correctly, you can do the following:
 
-Run a basic SQL query to check that the database is functioning correctly.
+1 Open pgAdmin and connect to the newly created database.
+
+2 Run a basic SQL query to check that the database is functioning correctly.
 
 # Usage
 To use this query, you need to have a database with these tables (best_movie_by_year, best_show_by_year, best_movies, best_shows, raw_credits, and raw_titles) and their data loaded into it.
 
-Connect to the database: Establish a connection to the database where the 6 tables are stored. This can be done through pgAdmin 
+Connect to the database: Establish a connection to the database where the 6 tables are stored. This can be done through pgAdmin.
 
 Write the query: Write a SQL query. For example, you could write a query to get the movie titles, release years, and genres for all Netflix movies.
 
@@ -58,7 +59,7 @@ SELECT *
 FROM raw_titles
 LIMIT 10;
 
-The resulting data includes the first 10 rows of  movie titles, release years, and genres
+The resulting data includes the first 10 rows of  movie titles, release years, and genres.
 
 **Please note that the syntax of your query may vary depending on the database management system you are using.**
 
