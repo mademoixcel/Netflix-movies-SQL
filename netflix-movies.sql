@@ -58,8 +58,9 @@ SELECT COUNT(*) FROM CTE_2;
 
 --9 Was there anytime a country win best_movie_by_year in consecutive years?--
 SELECT title, release_year, country_of_production,
-LAG(country_of_production) OVER(ORDER BY release_year DESC)
-FROM best_movie_by_year;
+LAG(country_of_production) OVER(ORDER BY release_year DESC) AS previous_country
+FROM(SELECT DISTINCT release_year, title, country_of_production
+FROM best_movie_by_year) AS cd;
  
 --10 Find the percentage of movies and shows--
 WITH CTES AS
@@ -178,7 +179,8 @@ USING(title);
 --23 Was there anytime a country win best_show_by_year in consecutive years?
 SELECT title, release_year, country_of_production,
 LAG(country_of_production) OVER(ORDER BY release_year DESC)
-FROM best_show_by_year;
+FROM (SELECT DISTINCT release_year, title, country_of_production
+FROM best_show_by_year) AS cd2;
 
 --24 Who are the directors of netflix best movies by year?--
 SELECT bsy.title, name, role
